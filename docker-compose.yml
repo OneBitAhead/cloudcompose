@@ -1,0 +1,60 @@
+services:
+
+ ## admin-ui
+ cc-admin-ui:
+    image: cloudcompose/base:latest
+    container_name: cc-admin-ui
+    init: true
+    networks:
+      - cloudcompose
+    restart: always
+    environment:
+      - LOCAL_USER_ID=${LOCAL_USER_ID:-1001}
+      - LOCAL_GROUP_ID=${LOCAL_GROUP_ID:-1001}
+    volumes:                
+      - ./data/admin-ui:/data/admin-ui:rw
+      - ./data/config:/data/config:ro
+      - ./data/sockets:/data/sockets:rw  
+    command: admin-ui
+    expose: 
+      - 5001
+
+ ## manager
+ cc-manager:
+    image: cloudcompose/base:latest
+    container_name: cc-manager
+    init: true
+    networks:
+      - cloudcompose
+    restart: always
+    # run as root: entrypoint-script changes it to local-user (see below)
+    user: 0:0
+    environment:
+      - LOCAL_USER_ID=${LOCAL_USER_ID:-1001}
+      - LOCAL_GROUP_ID=${LOCAL_GROUP_ID:-1001}
+    volumes:           
+      - /var/run/docker.sock:/var/run/docker.sock:rw 
+      - ./data:/data:rw      
+    command: manager
+
+ haproxy:
+    image: haproxy:latest
+    container_name: cc-haproxy
+    networks:
+      - cloudcompose
+    volumes:
+      - ./data/haproxy/conf.d:/etc/haproxy/conf.d:ro
+      - ./data/haproxy/ssl:/ssl:ro      
+    command: -f /etc/haproxy/conf.d
+    restart: always
+    sysctls:
+      - net.ipv4.ip_unprivileged_port_start=0
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+
+
+networks:
+  cloudcompose:
+    name: cloudcompose
+    driver: bridge
