@@ -5,7 +5,7 @@
 
 
 
-CloudCompose is a platform designed to make running containerized open-source software effortless, even for non-technical users. With a single click, applications packaged in Docker containers can be deployed and managed without requiring in-depth IT knowledge.
+<a href="https://www.cloudcompose.de" target="_blank">**CloudCompose**</a> is a platform designed to make running containerized open-source software effortless, even for non-technical users. With a single click, applications packaged in Docker containers can be deployed and managed without requiring in-depth IT knowledge.
 
 Through its browser-based interface, administrators can easily launch or stop applications, manage users, and configure permissions. The primary goal of CloudCompose is to eliminate the need for technical expertise—even at the administrative level—while enabling quick and reliable deployment of any Docker-ready software.
 
@@ -13,7 +13,7 @@ At its core, CloudCompose operates a Node.js proxy that sits in front of all ser
 
 Extending the platform with additional software is straightforward: new applications can be integrated by providing lightweight JavaScript-based integration scripts, with examples included for guidance.
 
-> CloudCompose is currently in early beta (version 0.5.0). Feedback is welcome—whether it’s bug reports or feature suggestions—via the issues section of the project.
+> CloudCompose is currently in its initial version (version 1.0). Feedback is welcome—whether it’s bug reports or feature suggestions—via the issues section of the project.
 
 
 ## Install
@@ -61,13 +61,13 @@ Using this method provides you full access to the source code and allows buildin
 2) Make the startup script executable:
 
     ```bash
-      chmod +x start.sh  
+      chmod +x start-dev.sh  
     ```
 
 3) Run the startup script to build images and start the system:
 
     ```bash
-    ./start.sh  
+    ./start-dev.sh  
     ```
     
 #### Post Installation
