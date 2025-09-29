@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "A code hosting and DevOps platform",
+    "description": "Gitea is a lightweight, self-hosted, all-in-one software development service offering Git hosting, code review, team collaboration, package registry, and CI/CD, designed to be fast, easy to deploy, and secure."
+  },
+  "de": {
+    "slogan": "Eine Plattform für Code-Hosting und DevOps",
+    "description": "Gitea ist ein leichtgewichtiges, selbst gehostetes All-in-One-Tool für Softwareentwicklung mit Git-Hosting, Code-Reviews, Teamzusammenarbeit, Paketregistrierung und CI/CD, entwickelt, um schnell, einfach bereitzustellen und sicher zu sein."
+  },
+  "es": {
+    "slogan": "Una plataforma de alojamiento de código y DevOps",
+    "description": "Gitea es un servicio de desarrollo de software ligero, autoalojado y todo en uno, que ofrece alojamiento Git, revisión de código, colaboración en equipo, registro de paquetes y CI/CD, diseñado para ser rápido, fácil de implementar y seguro."
+  },
+  "fr": {
+    "slogan": "Une plateforme d’hébergement de code et de DevOps",
+    "description": "Gitea est un service de développement logiciel léger, auto-hébergé et tout-en-un, offrant l’hébergement Git, la relecture de code, la collaboration d’équipe, le registre de paquets et le CI/CD, conçu pour être rapide, facile à déployer et sécurisé."
+  },
+  "it": {
+    "slogan": "Una piattaforma di hosting del codice e DevOps",
+    "description": "Gitea è un servizio di sviluppo software leggero, auto-ospitato e tutto-in-uno che offre hosting Git, revisione del codice, collaborazione del team, registro dei pacchetti e CI/CD, progettato per essere veloce, facile da distribuire e sicuro."
+  },
+  "pl": {
+    "slogan": "Platforma do hostingu kodu i DevOps",
+    "description": "Gitea to lekka, samodzielnie hostowana platforma typu wszystko w jednym do tworzenia oprogramowania, oferująca hosting Git, przegląd kodu, współpracę zespołową, rejestr pakietów oraz CI/CD, zaprojektowana tak, aby była szybka, łatwa we wdrożeniu i bezpieczna."
+  }
+}

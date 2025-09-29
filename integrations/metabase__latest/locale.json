@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Metabase is an business intelligence (BI) platform that enables users to explore, analyze, and visualize data without extensive technical expertise",
+    "description": "Metabase offers an intuitive interface with tools for creating queries from a wide range of databases using a graphical builder or SQL editor, visualizing results as charts or tables, and building interactive dashboards. It is suitable for both technical and non-technical users, facilitates data sharing and collaboration, and can be embedded into applications to let customers explore their own data"
+  },
+  "de": {
+    "slogan": "Metabase ist eine Business-Intelligence (BI) Plattform, die es Nutzern ermöglicht, Daten ohne umfangreiche technische Kenntnisse zu erkunden, zu analysieren und zu visualisieren",
+    "description": "Metabase bietet eine intuitive Benutzeroberfläche mit Werkzeugen zum Erstellen von Abfragen aus einer Vielzahl von Datenbanken mithilfe eines grafischen Editors oder eines SQL-Editors, zur Visualisierung von Ergebnissen als Diagramme oder Tabellen sowie zum Erstellen interaktiver Dashboards. Es ist sowohl für technische als auch für nicht-technische Nutzer geeignet, ermöglicht Datenfreigabe und Zusammenarbeit und kann in Anwendungen eingebettet werden, damit Kunden ihre eigenen Daten erkunden können"
+  },
+  "es": {
+    "slogan": "Metabase es una plataforma de inteligencia empresarial (BI) que permite a los usuarios explorar, analizar y visualizar datos sin necesidad de amplios conocimientos técnicos",
+    "description": "Metabase ofrece una interfaz intuitiva con herramientas para crear consultas a partir de una amplia variedad de bases de datos mediante un constructor gráfico o un editor SQL, visualizar resultados como gráficos o tablas y construir paneles interactivos. Es adecuada tanto para usuarios técnicos como no técnicos, facilita el intercambio y la colaboración de datos y puede integrarse en aplicaciones para que los clientes exploren sus propios datos"
+  },
+  "fr": {
+    "slogan": "Metabase est une plateforme d’intelligence d’affaires (BI) qui permet aux utilisateurs d’explorer, d’analyser et de visualiser des données sans expertise technique approfondie",
+    "description": "Metabase propose une interface intuitive avec des outils pour créer des requêtes à partir d’une large gamme de bases de données à l’aide d’un constructeur graphique ou d’un éditeur SQL, visualiser les résultats sous forme de graphiques ou de tableaux, et créer des tableaux de bord interactifs. Elle convient aussi bien aux utilisateurs techniques que non techniques, facilite le partage et la collaboration de données, et peut être intégrée dans des applications pour permettre aux clients d’explorer leurs propres données"
+  },
+  "it": {
+    "slogan": "Metabase è una piattaforma di business intelligence (BI) che consente agli utenti di esplorare, analizzare e visualizzare i dati senza particolare competenza tecnica",
+    "description": "Metabase offre un’interfaccia intuitiva con strumenti per creare query da una vasta gamma di database utilizzando un builder grafico o un editor SQL, visualizzare i risultati tramite grafici o tabelle, e costruire dashboard interattive. È adatta sia agli utenti tecnici sia a quelli non tecnici, facilita la condivisione e la collaborazione sui dati e può essere integrata nelle applicazioni per permettere ai clienti di esplorare i propri dati"
+  },
+  "pl": {
+    "slogan": "Metabase to platforma Business Intelligence (BI), która umożliwia użytkownikom eksplorację, analizę i wizualizację danych bez szerokiej wiedzy technicznej",
+    "description": "Metabase oferuje intuicyjny interfejs z narzędziami do tworzenia zapytań z szerokiej gamy baz danych za pomocą graficznego kreatora lub edytora SQL, wizualizowania wyników jako wykresy lub tabele oraz budowania interaktywnych pulpitów nawigacyjnych. Jest odpowiednia dla użytkowników technicznych i nietechnicznych, ułatwia udostępnianie i współpracę na danych oraz może być osadzona w aplikacjach, aby umożliwić klientom eksplorację własnych danych"
+  }
+}

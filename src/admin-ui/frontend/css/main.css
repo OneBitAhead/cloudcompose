@@ -1,0 +1,125 @@
+.btn-spinner {
+  position: relative;
+}
+
+.btn-spinner:disabled {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.btn-spinner:disabled::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-top: 2px solid currentColor;
+  animation: spin 1s linear infinite;
+  background: transparent;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.rotating-icon {
+  animation: iconspin 2s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes iconspin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.pointer-events-none {
+    pointer-events: none
+}
+
+.app-logo::before {
+  display:none
+}
+
+.hide-when-empty:empty {
+  display: none !important
+}
+
+.truncate-3 {
+  display: -webkit-box;       /* Use flexbox for block formatting */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;      /* Limit to 3 lines */
+  overflow: hidden;           /* Hide excess text */
+  text-overflow: ellipsis;    /* Show ellipsis */
+  line-height: 1.2em;         /* (optional) control line height */
+  max-height: 3.6em;          /* (optional) line-height * 3 lines */
+}
+
+#installation-queue-toggle:not(.active) svg.rotating-icon{
+  display: none
+}
+
+table.table-striped {
+  --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.02)
+}
+table.table-striped .btn-light {
+  --bs-btn-border-color: #c6c7c8;
+}
+
+.mobile-menu-icon {
+
+  --main-color: var(--secondary-500);
+
+  background: transparent;
+  border: 1px solid var(--main-color);
+}
+.mobile-menu-icon .sa-icon {
+  fill: var(--main-color);
+  stroke: var(--main-color);
+}
+
+.mobile-menu-icon:hover {
+  background: var(--main-color);
+  cursor: pointer
+}
+
+.mobile-menu-icon:hover svg {
+  --main-color: var(--bs-body-bg);
+}
+
+
+.mw-3 {
+  min-width: 3rem;
+}
+
+.avatar-circle {
+  opacity: .75;
+  line-height: 1.875rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+#js-nav-menu {
+  display: flex !important;
+  height: auto;
+}
+
+td.shrink-column, th.shrink-column {
+  width: fit-content;
+  white-space: nowrap; /* prevent wrapping to keep column narrow */
+}
+
+.logo-backdrop {
+  display: inline-grid;
+  place-items: center;
+  transition: unset !important; 
+  left: 0.625rem !important;
+}
+
+body:not(.debug) .post_install > iframe {
+  max-height: 1px;
+  opacity: 0
+}

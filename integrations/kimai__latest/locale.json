@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Keep track of working hours",
+    "description": "Kimai is an professional-grade time tracking software that helps individuals and teams track work hours by projects and tasks. It features customizable reports, invoicing, user roles, and API access."
+  },
+  "de": {
+    "slogan": "Arbeitszeiten im Blick behalten",
+    "description": "Kimai ist eine professionelle Zeiterfassungssoftware, die Einzelpersonen und Teams dabei unterstützt, Arbeitsstunden nach Projekten und Aufgaben zu erfassen. Sie bietet anpassbare Berichte, Rechnungsstellung, Benutzerrollen und API-Zugriff."
+  },
+  "es": {
+    "slogan": "Lleva el control de las horas de trabajo",
+    "description": "Kimai es un software de seguimiento de tiempo de nivel profesional que ayuda a individuos y equipos a registrar horas de trabajo por proyectos y tareas. Incluye informes personalizables, facturación, roles de usuario y acceso por API."
+  },
+  "fr": {
+    "slogan": "Suivez vos heures de travail",
+    "description": "Kimai est un logiciel de suivi du temps de niveau professionnel qui aide les particuliers et les équipes à suivre les heures de travail par projets et tâches. Il propose des rapports personnalisables, la facturation, des rôles utilisateurs et un accès par API."
+  },
+  "it": {
+    "slogan": "Tieni traccia delle ore lavorative",
+    "description": "Kimai è un software di monitoraggio del tempo di livello professionale che aiuta individui e team a registrare le ore lavorative per progetti e attività. Offre report personalizzabili, fatturazione, ruoli utente e accesso tramite API."
+  },
+  "pl": {
+    "slogan": "Śledź godziny pracy",
+    "description": "Kimai to profesjonalne oprogramowanie do śledzenia czasu, które pomaga osobom i zespołom rejestrować godziny pracy według projektów i zadań. Oferuje konfigurowalne raporty, fakturowanie, role użytkowników oraz dostęp do API."
+  }
+}

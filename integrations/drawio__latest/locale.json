@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "draw.io is a diagramming tool designed for creating a wide range of visual diagrams such as flowcharts, mind maps, and UML diagrams",
+    "description": "draw.io offers an easy-to-use drag-and-drop interface with a variety of predefined and customizable shapes. It supports integration with platforms such as Google Drive, Microsoft OneDrive, Atlassian Confluence, and Jira, allowing users to store files on their preferred cloud storage without needing an account to use the tool."
+  },
+  "de": {
+    "slogan": "draw.io ist ein Diagrammwerkzeug zur Erstellung einer Vielzahl visueller Diagramme wie Flussdiagramme, Mindmaps und UML-Diagramme",
+    "description": "draw.io bietet eine benutzerfreundliche Drag-and-Drop-Oberfläche mit einer Vielzahl vordefinierter und anpassbarer Formen. Es unterstützt die Integration mit Plattformen wie Google Drive, Microsoft OneDrive, Atlassian Confluence und Jira und ermöglicht es den Nutzern, Dateien im bevorzugten Cloud-Speicher abzulegen, ohne ein Konto zum Verwenden des Tools zu benötigen."
+  },
+  "es": {
+    "slogan": "draw.io es una herramienta de diagramación diseñada para crear una amplia variedad de diagramas visuales como diagramas de flujo, mapas mentales y diagramas UML",
+    "description": "draw.io ofrece una interfaz de arrastrar y soltar fácil de usar con una variedad de formas predefinidas y personalizables. Admite la integración con plataformas como Google Drive, Microsoft OneDrive, Atlassian Confluence y Jira, lo que permite a los usuarios almacenar archivos en su servicio de almacenamiento en la nube preferido sin necesidad de una cuenta para usar la herramienta."
+  },
+  "fr": {
+    "slogan": "draw.io est un outil de création de diagrammes conçu pour réaliser une large gamme de diagrammes visuels tels que des organigrammes, des cartes heuristiques et des diagrammes UML",
+    "description": "draw.io propose une interface simple de glisser-déposer avec une variété de formes prédéfinies et personnalisables. Il prend en charge l'intégration avec des plateformes telles que Google Drive, Microsoft OneDrive, Atlassian Confluence et Jira, permettant aux utilisateurs de stocker des fichiers dans leur espace de stockage cloud préféré sans avoir besoin de compte pour utiliser l'outil."
+  },
+  "it": {
+    "slogan": "draw.io è uno strumento di diagrammazione progettato per creare un'ampia gamma di diagrammi visivi come diagrammi di flusso, mappe mentali e diagrammi UML",
+    "description": "draw.io offre un'interfaccia intuitiva di trascinamento con una varietà di forme predefinite e personalizzabili. Supporta l'integrazione con piattaforme come Google Drive, Microsoft OneDrive, Atlassian Confluence e Jira, consentendo agli utenti di archiviare file nel proprio cloud preferito senza bisogno di un account per utilizzare lo strumento."
+  },
+  "pl": {
+    "slogan": "draw.io to narzędzie do tworzenia diagramów zaprojektowane do tworzenia szerokiej gamy diagramów wizualnych, takich jak schematy blokowe, mapy myśli i diagramy UML",
+    "description": "draw.io oferuje intuicyjny interfejs przeciągnij i upuść z różnorodnymi predefiniowanymi i konfigurowalnymi kształtami. Obsługuje integrację z platformami takimi jak Google Drive, Microsoft OneDrive, Atlassian Confluence i Jira, umożliwiając użytkownikom przechowywanie plików w preferowanej chmurze bez konieczności posiadania konta do korzystania z narzędzia."
+  }
+}

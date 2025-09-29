@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Excalidraw is a collaborative whiteboarding and diagramming tool.",
+    "description": "Excalidraw features an intuitive, hand-drawn look, a wide range of shape and drawing tools, and customizable visual options. It supports exporting diagrams in formats like PNG and SVG and is suitable for everything from brainstorming and presentations to process planning in teams of all sizes."
+  },
+  "de": {
+    "slogan": "Excalidraw ist ein kollaboratives Whiteboard- und Diagrammwerkzeug.",
+    "description": "Excalidraw bietet ein intuitives, handgezeichnetes Erscheinungsbild, eine große Auswahl an Form- und Zeichenwerkzeugen sowie anpassbare visuelle Optionen. Es unterstützt den Export von Diagrammen in Formaten wie PNG und SVG und eignet sich für alles – von Brainstormings und Präsentationen bis hin zur Prozessplanung in Teams jeder Größe."
+  },
+  "es": {
+    "slogan": "Excalidraw es una herramienta colaborativa de pizarra y diagramación.",
+    "description": "Excalidraw ofrece un aspecto intuitivo y dibujado a mano, una amplia gama de formas y herramientas de dibujo, y opciones visuales personalizables. Admite la exportación de diagramas en formatos como PNG y SVG, y es adecuado para todo, desde lluvias de ideas y presentaciones hasta la planificación de procesos en equipos de todos los tamaños."
+  },
+  "fr": {
+    "slogan": "Excalidraw est un outil collaboratif de tableau blanc et de création de diagrammes.",
+    "description": "Excalidraw propose une apparence intuitive et dessinée à la main, une large gamme de formes et d’outils de dessin, ainsi que des options visuelles personnalisables. Il permet d’exporter des diagrammes aux formats tels que PNG et SVG et convient aussi bien aux séances de brainstorming et aux présentations qu’à la planification de processus pour des équipes de toutes tailles."
+  },
+  "it": {
+    "slogan": "Excalidraw è uno strumento collaborativo di lavagna e creazione di diagrammi.",
+    "description": "Excalidraw offre un aspetto intuitivo e disegnato a mano, un’ampia gamma di strumenti per forme e disegno, e opzioni visive personalizzabili. Supporta l’esportazione di diagrammi in formati come PNG e SVG ed è adatto a tutto, dal brainstorming e le presentazioni alla pianificazione dei processi in team di qualsiasi dimensione."
+  },
+  "pl": {
+    "slogan": "Excalidraw to współdzielone narzędzie do tablic i diagramów.",
+    "description": "Excalidraw oferuje intuicyjny, odręczny wygląd, szeroki wybór kształtów i narzędzi do rysowania oraz konfigurowalne opcje wizualne. Obsługuje eksport diagramów do formatów takich jak PNG i SVG i nadaje się do wszystkiego — od burzy mózgów i prezentacji po planowanie procesów w zespołach każdej wielkości."
+  }
+}

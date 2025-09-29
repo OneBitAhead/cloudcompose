@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Preserve, organize, collaborate — Your web, forever captured",
+    "description": "A self-hosted, open-source bookmark manager to collect, organize, and preserve webpages with collaboration features."
+  },
+  "de": {
+    "slogan": "Bewahren, organisieren, zusammenarbeiten - Dein Web, für immer gesichert",
+    "description": "Ein selbstgehosteter, quelloffener Lesezeichen-Manager zum Sammeln, Organisieren und Bewahren von Webseiten mit Kollaborationsfunktionen."
+  },
+  "es": {
+    "slogan": "Preserva, organiza, colabora — Tu web, capturada para siempre",
+    "description": "Un gestor de marcadores de código abierto y autoalojado para recopilar, organizar y preservar páginas web con funciones colaborativas."
+  },
+  "fr": {
+    "slogan": "Préservez, organisez, collaborez — Votre web, capturé pour toujours",
+    "description": "Un gestionnaire de favoris auto-hébergé et open-source pour collecter, organiser et préserver les pages web avec des fonctions collaboratives."
+  },
+  "it": {
+    "slogan": "Conserva, organizza, collabora — Il tuo web, conservato per sempre",
+    "description": "Un gestore di segnalibri open-source e self-hosted per raccogliere, organizzare e conservare pagine web con funzionalità collaborative."
+  },
+  "pl": {
+    "slogan": "Zachowaj, organizuj, współpracuj — Twoja sieć, na zawsze zachowana",
+    "description": "Samodzielnie hostowany, otwartoźródłowy menedżer zakładek do zbierania, organizowania i zachowywania stron z funkcjami współpracy."
+  }
+}

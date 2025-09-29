@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | CloudCompose</title>
+    <link rel="icon" type="image/x-icon" href="/img/cloudcompose/cloudcompose-favicon-32x32.png">
+
+    <!-- Standard favicon for modern browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/cloudcompose/cloudcompose-favicon-32x32.png">
+
+    <!-- Apple Touch Icon for iOS (recommended 180x180) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/cloudcompose/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" media="screen, print" href="/css/template/flexy/styles.min.css">
+  <script>window.sha256=function sha256(ascii){function rightRotate(value,amount){return(value>>>amount)|(value<<(32-amount))};var mathPow=Math.pow;var maxWord=mathPow(2,32);var lengthProperty='length'
+var i,j;var result=''
+var words=[];var asciiBitLength=ascii[lengthProperty]*8;var hash=sha256.h=sha256.h||[];var k=sha256.k=sha256.k||[];var primeCounter=k[lengthProperty];var isComposite={};for(var candidate=2;primeCounter<64;candidate++){if(!isComposite[candidate]){for(i=0;i<313;i+=candidate){isComposite[i]=candidate}
+hash[primeCounter]=(mathPow(candidate,.5)*maxWord)|0;k[primeCounter++]=(mathPow(candidate,1/3)*maxWord)|0}}
+ascii+='\x80'
+while(ascii[lengthProperty]%64-56)ascii+='\x00'
+for(i=0;i<ascii[lengthProperty];i++){j=ascii.charCodeAt(i);if(j>>8)return;words[i>>2]|=j<<((3-i)%4)*8}
+words[words[lengthProperty]]=((asciiBitLength/maxWord)|0);words[words[lengthProperty]]=(asciiBitLength)
+for(j=0;j<words[lengthProperty];){var w=words.slice(j,j+=16);var oldHash=hash;hash=hash.slice(0,8);for(i=0;i<64;i++){var i2=i+j;var w15=w[i-15],w2=w[i-2];var a=hash[0],e=hash[4];var temp1=hash[7]+(rightRotate(e,6)^rightRotate(e,11)^rightRotate(e,25))+((e&hash[5])^((~e)&hash[6]))+k[i]+(w[i]=(i<16)?w[i]:(w[i-16]+(rightRotate(w15,7)^rightRotate(w15,18)^(w15>>>3))+w[i-7]+(rightRotate(w2,17)^rightRotate(w2,19)^(w2>>>10)))|0);var temp2=(rightRotate(a,2)^rightRotate(a,13)^rightRotate(a,22))+((a&hash[1])^(a&hash[2])^(hash[1]&hash[2]));hash=[(temp1+temp2)|0].concat(hash);hash[4]=(hash[4]+temp1)|0}
+for(i=0;i<8;i++){hash[i]=(hash[i]+oldHash[i])|0}}
+for(i=0;i<8;i++){for(j=3;j+1;j--){var b=(hash[i]>>(j*8))&255;result+=((b<16)?0:'')+b.toString(16)}}
+return result}</script>
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <style>.hide-when-empty:empty { display: none !important};</style>
+    <div class="position-relative overflow-hidden text-bg-light min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body">
+                <div class="text-center mb-0">
+                  <div class="d-inline-flex flex-row align-items-center gap-2">
+                    <a href="/" class="text-nowrap logo-img text-center d-block w-100">
+                      <img src="/img/cloudcompose/logo-128.png" width="40" height="40">
+                    </a>
+                    <h4 class="mb-0 flex-fill"><span class="fw-bolder">Cloud</span>Compose</h4>
+                  </div>
+                </div>
+                <p class="text-center">Free</p>
+
+                <div class="error alert alert-danger text-danger fs-2 hide-when-empty"></div>
+
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Username</label>
+                    <input type="email" class="form-control" name="email" value="" id="email" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" value="" id="exampleInputPassword1">
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 rounded-2">Sign In</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/vendor/flexy/jquery/dist/jquery.min.js"></script>
+  <script src="/js/vendor/flexy/bootstrap/dist/js/bootstrap.bundle.min.js"></script>  
+  <script>   
+
+      const form = document.getElementById('loginForm');
+      form.addEventListener('submit', async(event) => {
+          event.preventDefault(); // Prevent default form submission behavior (e.g. page reload)
+          // Your custom logic here
+          const email = form.email.value;
+          const pwd = form.password.value; 
+          var hashedPwd = sha256(email+pwd);
+    
+          // try to login
+          var resp = await fetch('/login',{
+              method: "POST",
+              headers:{
+                  'Content-Type': 'application/json'
+              },
+              redirect: "follow",
+              body: JSON.stringify({
+                  email: email,
+                  password: hashedPwd
+              })
+          });
+          var data = await resp.json(); 
+          const errorNode = document.querySelector('.error.alert');       
+
+          if (data.goTo) {
+             if (errorNode) errorNode.textContent = ''
+             window.location.href = data.goTo;
+          } else if(data.error) {
+            if (errorNode) errorNode.textContent = data.error
+          }
+        
+      });
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Manage Your Calendars and Contacts",
+    "description": "Radicale is a lightweight CalDAV and CardDAV server that enables easy synchronization of calendars and contacts across multiple devices. It is privacy-focused, supports authentication, and works with many calendar and contact clients."
+  },
+  "de": {
+    "slogan": "Verwalten Sie Ihre Kalender und Kontakte",
+    "description": "Radicale ist ein leichtgewichtiger CalDAV- und CardDAV-Server, der eine einfache Synchronisierung von Kalendern und Kontakten auf mehreren Geräten ermöglicht. Er ist datenschutzorientiert, unterstützt Authentifizierung und funktioniert mit vielen Kalender- und Kontaktanwendungen."
+  },
+  "es": {
+    "slogan": "Administra tus calendarios y contactos",
+    "description": "Radicale es un servidor CalDAV y CardDAV ligero que permite la fácil sincronización de calendarios y contactos en múltiples dispositivos. Está centrado en la privacidad, admite autenticación y funciona con muchos clientes de calendario y contactos."
+  },
+  "fr": {
+    "slogan": "Gérez vos calendriers et vos contacts",
+    "description": "Radicale est un serveur CalDAV et CardDAV léger qui permet une synchronisation facile des calendriers et des contacts sur plusieurs appareils. Il est axé sur la confidentialité, prend en charge l’authentification et fonctionne avec de nombreux clients de calendriers et de contacts."
+  },
+  "it": {
+    "slogan": "Gestisci i tuoi calendari e contatti",
+    "description": "Radicale è un server CalDAV e CardDAV leggero che consente la facile sincronizzazione di calendari e contatti su più dispositivi. È incentrato sulla privacy, supporta l'autenticazione e funziona con molti client di calendari e contatti."
+  },
+  "pl": {
+    "slogan": "Zarządzaj swoimi kalendarzami i kontaktami",
+    "description": "Radicale to lekki serwer CalDAV i CardDAV, który umożliwia łatwą synchronizację kalendarzy i kontaktów na wielu urządzeniach. Skupia się na prywatności, obsługuje uwierzytelnianie i współpracuje z wieloma klientami kalendarzy i kontaktów."
+  }
+}

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installation | CloudCompose</title>
+  <link rel="icon" type="image/x-icon" href="/img/cloudcompose/cloudcompose-favicon-32x32.png">
+
+  <!-- Standard favicon for modern browsers -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/cloudcompose/cloudcompose-favicon-32x32.png">
+
+  <!-- Apple Touch Icon for iOS (recommended 180x180) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/cloudcompose/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" media="screen, print" href="/css/template/flexy/styles.min.css">
+  <script>window.sha256 = function sha256(ascii) {
+      function rightRotate(value, amount) { return (value >>> amount) | (value << (32 - amount)) }; var mathPow = Math.pow; var maxWord = mathPow(2, 32); var lengthProperty = 'length'
+      var i, j; var result = ''
+      var words = []; var asciiBitLength = ascii[lengthProperty] * 8; var hash = sha256.h = sha256.h || []; var k = sha256.k = sha256.k || []; var primeCounter = k[lengthProperty]; var isComposite = {}; for (var candidate = 2; primeCounter < 64; candidate++) {
+        if (!isComposite[candidate]) {
+          for (i = 0; i < 313; i += candidate) { isComposite[i] = candidate }
+          hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0; k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0
+        }
+      }
+      ascii += '\x80'
+      while (ascii[lengthProperty] % 64 - 56) ascii += '\x00'
+      for (i = 0; i < ascii[lengthProperty]; i++) { j = ascii.charCodeAt(i); if (j >> 8) return; words[i >> 2] |= j << ((3 - i) % 4) * 8 }
+      words[words[lengthProperty]] = ((asciiBitLength / maxWord) | 0); words[words[lengthProperty]] = (asciiBitLength)
+      for (j = 0; j < words[lengthProperty];) {
+        var w = words.slice(j, j += 16); var oldHash = hash; hash = hash.slice(0, 8); for (i = 0; i < 64; i++) { var i2 = i + j; var w15 = w[i - 15], w2 = w[i - 2]; var a = hash[0], e = hash[4]; var temp1 = hash[7] + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) + ((e & hash[5]) ^ ((~e) & hash[6])) + k[i] + (w[i] = (i < 16) ? w[i] : (w[i - 16] + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3)) + w[i - 7] + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10))) | 0); var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2])); hash = [(temp1 + temp2) | 0].concat(hash); hash[4] = (hash[4] + temp1) | 0 }
+        for (i = 0; i < 8; i++) { hash[i] = (hash[i] + oldHash[i]) | 0 }
+      }
+      for (i = 0; i < 8; i++) { for (j = 3; j + 1; j--) { var b = (hash[i] >> (j * 8)) & 255; result += ((b < 16) ? 0 : '') + b.toString(16) } }
+      return result
+    }</script>
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+      class="position-relative overflow-hidden text-bg-light min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body">
+
+                <div class="text-center mb-0">
+                  <div class="d-inline-flex flex-row align-items-center gap-2">
+                    <a href="/" class="text-nowrap logo-img text-center d-block w-100">
+                      <img src="/img/cloudcompose/logo-128.png" width="40" height="40">
+                    </a>
+                    <h4 class="mb-0 flex-fill"><span class="fw-bolder">Cloud</span>Compose</h4>
+                  </div>
+                </div>
+                <p class="text-center">Installation</p>
+
+                <div id="content">
+                </div><!--End of content-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/vendor/flexy/jquery/dist/jquery.min.js"></script>
+  <script src="/js/vendor/flexy/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    input.error {
+      border: 1px solid var(--bs-danger);
+      color: var(--bs-danger);
+    }
+  </style>
+  <script>
+
+
+    // fetch the install state (e.g. pressing reload while installing!)
+    const content = document.getElementById("content");
+
+
+    function setErrors(errors) {
+
+      const form = document.getElementById('loginForm');
+      let fields = ["email", "password", "password_repeat", "base_domain"];
+      for (var x in fields) {
+        form[fields[x]].classList.remove("error");
+        let error = document.getElementById(`${fields[x]}_error`);
+        if (error) {
+          error.innerHTML = "";
+          error.classList.add("d-none");
+        }
+      }
+      for (var id in errors) {
+        if (!form[id]) continue;
+        form[id].classList.add("error");
+        let error = document.getElementById(`${id}_error`);
+        if (error) {
+          error.innerHTML = errors[id];
+          error.classList.remove("d-none");
+        }
+      }
+    }
+
+
+    function renderInstall() {
+
+
+      var hostname = window.location.hostname;
+      var warningMessage = '';
+      var baseDomainName = '';
+      var tenantName = '';
+
+      if (hostname === "localhost") {
+        warningMessage = `<div style="color: red; font-family: Arial, sans-serif; padding: 10px; border: 1px solid var(--bs-danger); border-radius: 5px; background-color: #ffe6e6;">
+                  <strong>Please note:</strong> Use CloudCompose with a <em>fully qualified URI</em>, as applications are discovered by subdomain names.<br>
+                  Using <code>localhost</code> <strong>will not work</strong>.
+                </div>
+                `;
+
+      } else {
+        var parts = hostname.split(".");
+        tenantName = parts[0];
+        baseDomainName = `*.${parts.slice(1).join('.')}`
+      }
+
+
+      content.innerHTML = `
+          
+              ${warningMessage}
+
+          <form id="loginForm">
+
+              <section class="pb-2 mt-4 mb-4 d-flex flex-row" style="border-bottom: 1px solid var(--bs-gray-200)">
+                <h6 class="flex-fill">1. Create Management User<h6>
+                <i title="Use these credentials to enter the management interface of CloudCompose after installation." class="ti ti-info-circle"></i> 
+              </section>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Administrator Mail Address</label>
+                <input type="email" class="form-control" name="email" placeholder="e.g. admin@yourdomain.com" id="email" aria-describedby="emailHelp">
+                <div id="email_error" class="form-text d-none" style="color:var(--bs-danger)"></div>
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">Administrator Password</label>
+                <input type="password" class="form-control" name="password" id="password">
+                <div id="password_error" class="form-text d-none" style="color:var(--bs-danger)"></div>
+              </div>
+              <div class="mb-4">
+                <label for="password_repeat" class="form-label">Repeat Administrator Password</label>
+                <input type="password" class="form-control" name="password_repeat" id="password_repeat">
+                <div id="password_repeat_error" class="form-text d-none" style="color:var(--bs-danger)"></div>
+              </div>
+
+              <section class="pb-2 mt-4 mb-4 pt-4 d-flex flex-row" style="border-bottom: 1px solid var(--bs-gray-200)">
+                <h6 class="flex-fill">2. Define Base Domain<h6>
+                <i title="All applications started by CloudCompose will run as subdomain of this domain. You can use the administrator account to upload a wildcard SSL certificate after installation." class="ti ti-info-circle"></i> 
+              </section>
+
+              
+              <div class="mb-4">
+                <label for="base_domain" class="form-label">Base Domain Name (in wildcard-notation)</label>
+                <input type="text" class="form-control" name="base_domain" value="${baseDomainName}" id="base_domain">
+                <div class="form-text">Like <code class="mx-1" style="--bs-code-color: currentColor">*.my-domain.com</code> without https:// or http://</div>
+                <div id="base_domain_error" class="form-text d-none" style="color:var(--bs-danger)"></div>
+              </div>         
+              
+                 <div class="mb-4">
+                <label for="base_domain" class="form-label">Tenant Name</label>
+                <input type="text" class="form-control" name="tenant_name" value="${tenantName}" id="tenant_name">
+                <div class="form-text">First part of your domain <code class="mx-1" style="--bs-code-color: currentColor"> <b>*</b>.my-domain.com</code></div>
+                <div id="tenant_name_error" class="form-text d-none" style="color:var(--bs-danger)"></div>
+              </div>  
+
+
+              <button type="submit" class="btn btn-primary w-100 py-8 fs-4 rounded-2">Install Cloud Compose</button>
+            </form>`;
+
+      const form = document.getElementById('loginForm');
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent default form submission behavior (e.g. page reload)
+        // Your custom logic here
+        const email = form.email.value;
+        const pwd = form.password.value;
+        const pwd_repeat = form.password_repeat.value;
+        const base_domain = form.base_domain.value;
+        const tenant_name = form.tenant_name.value;
+
+        var errors = {};
+
+        if (email === "") errors["email"] = "Email needs to be set";
+        if (pwd === "") errors["password"] = "Password needs to be set";
+        if (pwd_repeat === "") errors["password_repeat"] = "Password needs to be set";
+        else if (pwd !== pwd_repeat) {
+          errors["password"] = "Passwords are not the same!";
+          errors["password_repeat"] = "Passwords are not the same!";
+        }
+
+        if (base_domain === "") errors["base_domain"] = "Needs a valid URI (in wildcard mode)";
+        if (tenant_name === "") errors["tenant_name"] = "Tenant needs to be set";
+
+
+        if (Object.keys(errors).length > 0) {
+          setErrors(errors);
+          return false;
+        }
+
+
+        var hashedPwd = sha256(email + pwd);
+        const payload = {
+          email: email,
+          password: hashedPwd,
+          base_domain: base_domain,
+          tenant_name: tenant_name
+        }
+
+        // try to login
+        var resp = await fetch('/install', {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          redirect: "follow",
+          body: JSON.stringify(payload)
+        });
+        var data = await resp.json();
+
+        if (data.errors) {
+          setErrors(data.errors);
+          return false;
+        } else {       
+          renderInstalling()
+
+        }
+
+
+      });
+
+    }
+
+
+
+    async function fetchWithTimeout(url, options = {}, timeout = 1000) {
+      const controller = new AbortController();
+      const signal = controller.signal;
+      const fetchOptions = { ...options, signal };
+
+      const timeoutId = setTimeout(() => {
+        controller.abort();  // abort the fetch
+      }, timeout);
+
+      try {
+        const response = await fetch(url, fetchOptions);
+        clearTimeout(timeoutId);
+        return response;
+      } catch (err) {
+        clearTimeout(timeoutId);
+        if (err.name === 'AbortError') {
+          throw new Error('Fetch timed out');
+        }
+        throw err;
+      }
+    }
+
+
+    async function getStatus() {
+
+      try {
+        const res = await fetchWithTimeout("/installStatus", {}, 1000);
+        var data = await res.json();  // success
+        return data.status;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    function renderInstalling(retries) {
+
+      if (!retries) {
+        content.innerHTML = `<div style="text-align:center">
+            <h3>Please wait a few seconds...</h3><br><br>
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>`
+      }
+
+      // wait for done...    
+      setTimeout(async () => {
+        var status = await getStatus();
+        if (status === "done") renderDone();
+        else renderInstalling(true);
+      }, 1000);
+
+
+    }
+
+    function renderDone(payload) {
+
+      content.innerHTML = `<h6 class="text-center mb-0 text-success">
+                  <div class="d-inline-flex flex-row align-items-center gap-2">
+                    <i title="Installation succeeded" class="ti ti-check"></i> 
+                    <div class="mb-0 flex-fill">Done!</div>
+                  </div>
+                </h6>
+                <p class="mt-4 text-center">You will be forwarded ${(payload && payload.base_domain) ? 'to your base domain ' : ' '}in <b>3 seconds</b>.</p>
+                `;
+
+      setTimeout(_ => {
+        window.location.href = (payload && payload.base_domain) ? payload.base_domain : window.location.origin
+      }, 3000)
+
+    }
+
+
+    async function main() {
+
+      var status = await getStatus();
+      if (status === null) renderInstall();
+      else if (status === "installing") renderInstalling();
+      else if (status === "done") renderDone();
+
+    }
+    main();
+
+
+  </script>
+
+
+</body>
+
+</html>

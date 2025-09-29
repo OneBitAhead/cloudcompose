@@ -137,3 +137,9 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+/data
+/docker/.env
+/src/admin-ui/node_modules
+/src/cc-manager/node_modules

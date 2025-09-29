@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "NocoDB transforms any relational database into a user-friendly, spreadsheet-like interface",
+    "description": "NocoDB allows users to interact with their data visually, create different views (like grid, calendar, and gallery), and manage data through forms without writing code. It provides instant REST APIs for your tables, supports automations, integrates with various tools (e.g., Slack, S3, SES), and offers granular access control for collaboration. The platform is scales easily, and is highly customizable for a wide range of business and data management workflows"
+  },
+  "de": {
+    "slogan": "NocoDB verwandelt jede relationale Datenbank in eine benutzerfreundliche, tabellenähnliche Oberfläche",
+    "description": "NocoDB ermöglicht es Nutzern, visuell mit ihren Daten zu arbeiten, verschiedene Ansichten zu erstellen (wie Raster, Kalender und Galerie) und Daten über Formulare ohne Programmierkenntnisse zu verwalten. Es stellt sofort nutzbare REST-APIs für Ihre Tabellen bereit, unterstützt Automatisierungen, integriert sich mit verschiedenen Tools (z. B. Slack, S3, SES) und bietet granulare Zugriffskontrollen für die Zusammenarbeit. Die Plattform skaliert leicht und ist hochgradig anpassbar für eine Vielzahl von Geschäfts- und Datenverwaltungsprozessen"
+  },
+  "es": {
+    "slogan": "NocoDB transforma cualquier base de datos relacional en una interfaz fácil de usar similar a una hoja de cálculo",
+    "description": "NocoDB permite a los usuarios interactuar visualmente con sus datos, crear diferentes vistas (como cuadrícula, calendario y galería) y administrar datos mediante formularios sin escribir código. Proporciona APIs REST instantáneas para tus tablas, soporta automatizaciones, se integra con diversas herramientas (por ejemplo, Slack, S3, SES) y ofrece control de acceso granular para colaboración. La plataforma escala fácilmente y es altamente personalizable para una amplia gama de flujos de trabajo de gestión de datos y negocios"
+  },
+  "fr": {
+    "slogan": "NocoDB transforme n’importe quelle base de données relationnelle en une interface conviviale de type tableur",
+    "description": "NocoDB permet aux utilisateurs d’interagir visuellement avec leurs données, de créer différentes vues (comme grille, calendrier, galerie) et de gérer les données via des formulaires sans écrire de code. Il fournit des API REST instantanées pour vos tables, supporte les automatisations, s’intègre avec divers outils (par exemple, Slack, S3, SES) et offre un contrôle d’accès granulaire pour la collaboration. La plateforme s’adapte facilement et est hautement personnalisable pour une large gamme de workflows métiers et de gestion de données"
+  },
+  "it": {
+    "slogan": "NocoDB trasforma qualsiasi database relazionale in un'interfaccia semplice simile a un foglio di calcolo",
+    "description": "NocoDB consente agli utenti di interagire visivamente con i propri dati, creare diverse visualizzazioni (come griglia, calendario e galleria) e gestire i dati tramite moduli senza scrivere codice. Fornisce API REST istantanee per le vostre tabelle, supporta automazioni, si integra con vari strumenti (ad esempio, Slack, S3, SES) e offre un controllo granulare degli accessi per la collaborazione. La piattaforma scala facilmente ed è altamente personalizzabile per una vasta gamma di flussi di lavoro aziendali e di gestione dati"
+  },
+  "pl": {
+    "slogan": "NocoDB przekształca każdą relacyjną bazę danych w przyjazny interfejs przypominający arkusz kalkulacyjny",
+    "description": "NocoDB pozwala użytkownikom na wizualną interakcję z danymi, tworzenie różnych widoków (takich jak siatka, kalendarz, galeria) oraz zarządzanie danymi za pomocą formularzy bez pisania kodu. Udostępnia natychmiastowe REST API dla Twoich tabel, wspiera automatyzacje, integruje się z różnymi narzędziami (np. Slack, S3, SES) oraz oferuje szczegółową kontrolę dostępu dla współpracy. Platforma łatwo się skalduje i jest wysoce konfigurowalna dla szerokiego zakresu procesów biznesowych i zarządzania danymi"
+  }
+}

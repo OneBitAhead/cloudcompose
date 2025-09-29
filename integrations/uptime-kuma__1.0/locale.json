@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Uptime Kuma is a monitoring tool that tracks the uptime and status of your websites, servers, and services",
+    "description": "Uptime Kuma features a modern, user-friendly dashboard, customizable status pages, real-time alerts through dozens of popular channels, and supports monitoring via HTTP(s), TCP, Ping, DNS, and more. Designed for flexibility and control, Uptime Kuma is a compelling alternative to commercial uptime solutions, putting all your monitoring needs on your own server."
+  },
+  "de": {
+    "slogan": "Uptime Kuma ist ein Überwachungstool, das die Verfügbarkeit und den Status Ihrer Websites, Server und Dienste verfolgt",
+    "description": "Uptime Kuma bietet ein modernes, benutzerfreundliches Dashboard, anpassbare Statusseiten, Echtzeit-Benachrichtigungen über Dutzende beliebter Kanäle und unterstützt die Überwachung über HTTP(s), TCP, Ping, DNS und mehr. Entwickelt für Flexibilität und Kontrolle ist Uptime Kuma eine überzeugende Alternative zu kommerziellen Überwachungslösungen und stellt all Ihre Überwachungsanforderungen auf Ihrem eigenen Server bereit."
+  },
+  "es": {
+    "slogan": "Uptime Kuma es una herramienta de monitoreo que rastrea el tiempo de actividad y el estado de tus sitios web, servidores y servicios",
+    "description": "Uptime Kuma cuenta con un panel moderno y fácil de usar, páginas de estado personalizables, alertas en tiempo real a través de decenas de canales populares, y soporta monitoreo vía HTTP(s), TCP, Ping, DNS y más. Diseñado para flexibilidad y control, Uptime Kuma es una alternativa convincente a las soluciones comerciales de monitoreo, poniendo todas tus necesidades en tu propio servidor."
+  },
+  "fr": {
+    "slogan": "Uptime Kuma est un outil de surveillance qui suit le temps de disponibilité et l'état de vos sites Web, serveurs et services",
+    "description": "Uptime Kuma propose un tableau de bord moderne et convivial, des pages d'état personnalisables, des alertes en temps réel via des dizaines de canaux populaires, et prend en charge la surveillance via HTTP(s), TCP, Ping, DNS, et plus encore. Conçu pour la flexibilité et le contrôle, Uptime Kuma est une alternative convaincante aux solutions commerciales de surveillance, regroupant tous vos besoins de surveillance sur votre propre serveur."
+  },
+  "it": {
+    "slogan": "Uptime Kuma è uno strumento di monitoraggio che traccia il tempo di attività e lo stato dei tuoi siti web, server e servizi",
+    "description": "Uptime Kuma offre una dashboard moderna e facile da usare, pagine di stato personalizzabili, avvisi in tempo reale tramite dozzine di canali popolari e supporta il monitoraggio tramite HTTP(s), TCP, Ping, DNS e altro. Progettato per flessibilità e controllo, Uptime Kuma è un'alternativa convincente alle soluzioni commerciali di monitoraggio, mettendo tutte le tue esigenze di monitoraggio sul tuo server."
+  },
+  "pl": {
+    "slogan": "Uptime Kuma to narzędzie monitorujące, które śledzi czas działania i status Twoich witryn, serwerów i usług",
+    "description": "Uptime Kuma oferuje nowoczesny, przyjazny dla użytkownika pulpit nawigacyjny, konfigurowalne strony statusu, powiadomienia w czasie rzeczywistym za pośrednictwem licznych popularnych kanałów oraz obsługuje monitorowanie przez HTTP(s), TCP, Ping, DNS i inne. Zaprojektowany z myślą o elastyczności i kontroli, Uptime Kuma jest atrakcyjną alternatywą dla komercyjnych rozwiązań monitorujących, umożliwiając zarządzanie wszystkimi potrzebami monitoringu na własnym serwerze."
+  }
+}

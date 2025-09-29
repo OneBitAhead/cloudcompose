@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Instantly stream and search your Docker container logs with Dozzle’s effortless web interface.",
+    "description": "Dozzle is a lightweight, open-source web application for instantly viewing real-time logs from running Docker containers through an intuitive browser interface. It simplifies live monitoring, debugging, and filtering of container output, supporting search features like fuzzy search, regex, and SQL queries for efficient log analysis. Dozzle is particularly useful for developers and system administrators managing containerized environments who want hassle-free, secure, and immediate access to their container logs without complex setup."
+  },
+  "de": {
+    "slogan": "Streame und durchsuche deine Docker-Container-Logs sofort mit Dozzles mühelosem Webinterface.",
+    "description": "Dozzle ist eine leichtgewichtige, Open-Source-Webanwendung zum sofortigen Anzeigen von Echtzeit-Logs laufender Docker-Container über eine intuitive Browser-Oberfläche. Es vereinfacht die Live-Überwachung, das Debugging und die Filterung von Container-Ausgaben und unterstützt Suchfunktionen wie Fuzzy-Suche, Regex und SQL-Abfragen für eine effiziente Protokollanalyse. Dozzle ist besonders nützlich für Entwickler und Systemadministratoren, die containerisierte Umgebungen verwalten und schnellen, sicheren und unkomplizierten Zugriff auf ihre Container-Logs ohne komplexe Einrichtung wünschen."
+  },
+  "es": {
+    "slogan": "Transmite y busca instantáneamente los registros de tus contenedores Docker con la interfaz web sin esfuerzo de Dozzle.",
+    "description": "Dozzle es una aplicación web ligera y de código abierto para ver instantáneamente los registros en tiempo real de contenedores Docker en ejecución a través de una interfaz de navegador intuitiva. Simplifica la monitorización en vivo, depuración y filtrado de la salida de los contenedores, soportando funciones de búsqueda como búsqueda difusa, expresiones regulares y consultas SQL para un análisis eficiente de registros. Dozzle es especialmente útil para desarrolladores y administradores de sistemas que gestionan entornos con contenedores y que quieren un acceso seguro, rápido y sin complicaciones a sus registros sin configuraciones complejas."
+  },
+  "fr": {
+    "slogan": "Diffusez et recherchez instantanément les logs de vos conteneurs Docker grâce à l’interface web fluide de Dozzle.",
+    "description": "Dozzle est une application web légère et open source permettant de visualiser instantanément les logs en temps réel des conteneurs Docker en cours d’exécution via une interface navigateur intuitive. Elle simplifie la surveillance en direct, le débogage et le filtrage des sorties des conteneurs, avec des fonctionnalités de recherche telles que la recherche floue, les expressions régulières et les requêtes SQL pour une analyse efficace des logs. Dozzle est particulièrement utile aux développeurs et administrateurs système gérant des environnements containerisés, désireux d’un accès simple, sécurisé et immédiat à leurs logs sans configurations complexes."
+  },
+  "it": {
+    "slogan": "Trasmetti e cerca istantaneamente i log dei tuoi container Docker con l’interfaccia web senza sforzo di Dozzle.",
+    "description": "Dozzle è un’applicazione web leggera e open source che permette di visualizzare in tempo reale i log dei container Docker in esecuzione tramite un’interfaccia browser intuitiva. Semplifica il monitoraggio in diretta, il debug e il filtraggio dell’output dei container, supportando funzioni di ricerca come ricerca fuzzy, regex e query SQL per un’analisi efficiente dei log. Dozzle è particolarmente utile per sviluppatori e amministratori di sistema che gestiscono ambienti containerizzati e vogliono un accesso immediato, sicuro e senza complicazioni ai log dei container."
+  },
+  "pl": {
+    "slogan": "Natychmiast transmituj i przeszukuj logi kontenerów Docker dzięki wygodnemu interfejsowi webowemu Dozzle.",
+    "description": "Dozzle to lekka, otwartoźródłowa aplikacja webowa do natychmiastowego przeglądania logów w czasie rzeczywistym uruchomionych kontenerów Docker przez intuicyjny interfejs przeglądarki. Ułatwia monitorowanie na żywo, debugowanie i filtrowanie wyjścia z kontenerów, wspierając wyszukiwanie rozmyte, wyrażenia regularne oraz zapytania SQL dla efektywnej analizy logów. Dozzle jest szczególnie przydatny dla programistów i administratorów systemów zarządzających środowiskami kontenerowymi, którzy chcą mieć łatwy, bezpieczny i natychmiastowy dostęp do logów bez skomplikowanej konfiguracji."
+  }
+}

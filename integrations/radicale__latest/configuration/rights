@@ -1,0 +1,51 @@
+# Allow reading root collection for authenticated users
+[root]
+user: .+
+collection:
+permissions: R
+
+# Allow reading and writing principal collection (same as username)
+[principal]
+user: .+
+collection: {user}
+permissions: RW
+
+# Allow reading and writing calendars and address books that are direct
+# children of the principal collection
+[calendars]
+user: .+
+collection: {user}/[^/]+
+permissions: rw
+
+
+# Grant reading and writing principal collection to technical administrator
+#[principal-admin]
+#user: techadmin
+#collection: admin@onebitahead.com
+#permissions: RW
+
+# Grant reading and writing calendars and address books that are direct
+# children of the principal collection to technical administrator
+#[calendars-admin]
+#user: techadmin
+#collection: admin@onebitahead.com/[^/]+
+#permissions: rw
+
+#[admin]
+#user: tech_admin
+#collection: .*
+#permissions: RWrw
+
+
+#### TEST for shared calendar
+[gthies_at_sreimers]
+user: gthies@onebitahead.com
+collection: sreimers@onebitahead.com/shared-calendar
+permissions: rw
+
+#### TEST for shared calendar
+[sreimers_at_gthies]
+user: sreimers@onebitahead.com
+collection: gthies@onebitahead.com/shared-calendar
+permissions: rw
+

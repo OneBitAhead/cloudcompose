@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Joxit docker-registry-ui is a simple and comprehensive web user interface for managing your private Docker registry",
+    "description": "Joxit docker-registry-ui supports Docker Registry v2 and v3, allowing users to browse, view, and delete container images through an easy-to-use interface. The UI can be customized with various options, such as setting a custom title, enabling image deletion, and showing tag content digests."
+  },
+  "de": {
+    "slogan": "Joxit docker-registry-ui ist eine einfache und umfassende Web-Benutzeroberfläche zur Verwaltung Ihrer privaten Docker-Registry",
+    "description": "Joxit docker-registry-ui unterstützt Docker Registry v2 und v3 und ermöglicht es Benutzern, Container-Images über eine benutzerfreundliche Oberfläche zu durchsuchen, anzuzeigen und zu löschen. Die Benutzeroberfläche kann mit verschiedenen Optionen angepasst werden, z. B. durch Festlegen eines eigenen Titels, Aktivieren des Löschens von Images und Anzeigen von Tag-Digests."
+  },
+  "es": {
+    "slogan": "Joxit docker-registry-ui es una interfaz web sencilla y completa para gestionar tu registro privado de Docker",
+    "description": "Joxit docker-registry-ui es compatible con Docker Registry v2 y v3, lo que permite a los usuarios navegar, ver y eliminar imágenes de contenedores a través de una interfaz fácil de usar. La interfaz puede personalizarse con varias opciones, como establecer un título propio, habilitar la eliminación de imágenes y mostrar digests de contenido de etiquetas."
+  },
+  "fr": {
+    "slogan": "Joxit docker-registry-ui est une interface web simple et complète pour gérer votre registre Docker privé",
+    "description": "Joxit docker-registry-ui prend en charge Docker Registry v2 et v3, permettant aux utilisateurs de parcourir, visualiser et supprimer des images de conteneurs via une interface facile à utiliser. L’interface peut être personnalisée avec diverses options, comme définir un titre personnalisé, activer la suppression des images et afficher les digests des tags."
+  },
+  "it": {
+    "slogan": "Joxit docker-registry-ui è un'interfaccia web semplice e completa per gestire il tuo registro Docker privato",
+    "description": "Joxit docker-registry-ui supporta Docker Registry v2 e v3, consentendo agli utenti di sfogliare, visualizzare ed eliminare le immagini dei container tramite un'interfaccia facile da usare. L'interfaccia può essere personalizzata con varie opzioni, come impostare un titolo personalizzato, abilitare l'eliminazione delle immagini e mostrare i digest dei tag."
+  },
+  "pl": {
+    "slogan": "Joxit docker-registry-ui to prosta i kompleksowa przeglądarkowa aplikacja do zarządzania prywatnym rejestrem Dockera",
+    "description": "Joxit docker-registry-ui obsługuje Docker Registry v2 i v3, umożliwiając użytkownikom przeglądanie, wyświetlanie i usuwanie obrazów kontenerów za pomocą łatwego w obsłudze interfejsu. Interfejs można dostosować za pomocą różnych opcji, takich jak ustawienie własnego tytułu, włączenie usuwania obrazów i wyświetlanie skrótów zawartości tagów."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "en": {
+    "slogan": "Containers without the chaos — simple, secure, and scalable docker container management.",
+    "description": "Portainer Community Edition (CE) is a free and open-source container management platform that simplifies managing Docker, Kubernetes, and other container environments through an intuitive graphical user interface. It allows users to easily deploy, monitor, and troubleshoot containerized applications without needing deep command-line expertise. Designed for individuals and small teams, Portainer CE offers essential container management features while enabling users to manage resources like containers, volumes, networks, and images efficiently."
+  },
+  "de": {
+    "slogan": "Container ohne Chaos – einfache, sichere und skalierbare Verwaltung von Docker-Containern.",
+    "description": "Portainer Community Edition (CE) ist eine kostenlose Open-Source-Plattform zur Containerverwaltung, die die Verwaltung von Docker, Kubernetes und anderen Container-Umgebungen über eine intuitive grafische Benutzeroberfläche vereinfacht. Sie ermöglicht es Benutzern, containerisierte Anwendungen einfach bereitzustellen, zu überwachen und zu beheben, ohne tiefgreifende Kommandozeilenkenntnisse zu benötigen. Portainer CE richtet sich an Einzelpersonen und kleine Teams und bietet essentielle Funktionen zur Containerverwaltung, mit denen Benutzer Ressourcen wie Container, Volumes, Netzwerke und Images effizient verwalten können."
+  },
+  "es": {
+    "slogan": "Contenedores sin caos: gestión de contenedores Docker simple, segura y escalable.",
+    "description": "Portainer Community Edition (CE) es una plataforma gratuita y de código abierto para la gestión de contenedores que simplifica la administración de Docker, Kubernetes y otros entornos de contenedores mediante una interfaz gráfica intuitiva. Permite a los usuarios desplegar, monitorear y solucionar aplicaciones en contenedores fácilmente, sin necesidad de experiencia profunda en línea de comandos. Diseñada para individuos y pequeños equipos, Portainer CE ofrece funciones esenciales de gestión de contenedores y permite administrar eficientemente recursos como contenedores, volúmenes, redes e imágenes."
+  },
+  "fr": {
+    "slogan": "Des conteneurs sans chaos — gestion simple, sécurisée et évolutive des conteneurs Docker.",
+    "description": "Portainer Community Edition (CE) est une plateforme de gestion de conteneurs gratuite et open-source qui simplifie la gestion de Docker, Kubernetes et d’autres environnements de conteneurs grâce à une interface utilisateur graphique intuitive. Elle permet aux utilisateurs de déployer, surveiller et dépanner facilement des applications conteneurisées sans nécessiter une expertise approfondie en ligne de commande. Conçue pour les particuliers et les petites équipes, Portainer CE offre des fonctionnalités essentielles de gestion de conteneurs tout en permettant une gestion efficace des ressources telles que les conteneurs, volumes, réseaux et images."
+  },
+  "it": {
+    "slogan": "Container senza caos — gestione semplice, sicura e scalabile dei container Docker.",
+    "description": "Portainer Community Edition (CE) è una piattaforma di gestione container gratuita e open-source che semplifica la gestione di Docker, Kubernetes e altri ambienti container attraverso un’interfaccia grafica intuitiva. Permette agli utenti di distribuire, monitorare e risolvere facilmente le applicazioni containerizzate senza necessitare di competenze approfondite da riga di comando. Progettata per singoli utenti e piccoli team, Portainer CE offre le funzionalità essenziali di gestione dei container consentendo una gestione efficiente di risorse come container, volumi, reti e immagini."
+  },
+  "pl": {
+    "slogan": "Kontenery bez chaosu — proste, bezpieczne i skalowalne zarządzanie kontenerami Docker.",
+    "description": "Portainer Community Edition (CE) to bezpłatna i otwartoźródłowa platforma do zarządzania kontenerami, która upraszcza zarządzanie Dockerem, Kubernetes i innymi środowiskami kontenerowymi przez intuicyjny interfejs graficzny. Umożliwia użytkownikom łatwe wdrażanie, monitorowanie i rozwiązywanie problemów z aplikacjami kontenerowymi bez potrzeby zaawansowanej znajomości linii poleceń. Zaprojektowany dla indywidualnych użytkowników i małych zespołów, Portainer CE oferuje podstawowe funkcje zarządzania kontenerami, umożliwiając efektywne zarządzanie zasobami takimi jak kontenery, wolumeny, sieci i obrazy."
+  }
+}

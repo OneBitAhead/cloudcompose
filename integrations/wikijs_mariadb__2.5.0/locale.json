@@ -1,0 +1,27 @@
+{
+    "en": {
+      "slogan": "Wiki.js is a modern wiki software built on Node.js, designed for efficient knowledge management and documentation",
+      "description": "Wiki.js features a user-friendly interface for creating and editing pages using Markdown or a visual (WYSIWYG) editor, and supports media embedding, version tracking, and multilingual content. Content is typically stored in Markdown files and can be synchronized with remote Git repositories for version control and collaboration. Wiki.js offers modular customization, fine-grained permission settings, and a robust built-in search engine for easy information retrieval."
+    },
+    "de": {
+      "slogan": "Wiki.js ist eine moderne Wiki-Software basierend auf Node.js, entwickelt für effizientes Wissensmanagement und Dokumentation",
+      "description": "Wiki.js bietet eine benutzerfreundliche Oberfläche zum Erstellen und Bearbeiten von Seiten mit Markdown oder einem visuellen (WYSIWYG) Editor und unterstützt das Einbetten von Medien, Versionsverfolgung sowie mehrsprachige Inhalte. Inhalte werden typischerweise in Markdown-Dateien gespeichert und können mit entfernten Git-Repositories zur Versionskontrolle und Zusammenarbeit synchronisiert werden. Wiki.js bietet modulare Anpassungsmöglichkeiten, fein granulare Berechtigungseinstellungen und eine leistungsstarke integrierte Suchfunktion für eine einfache Informationssuche."
+    },
+    "es": {
+      "slogan": "Wiki.js es un software moderno de wiki construido sobre Node.js, diseñado para una gestión de conocimiento y documentación eficiente",
+      "description": "Wiki.js cuenta con una interfaz fácil de usar para crear y editar páginas usando Markdown o un editor visual (WYSIWYG), y soporta la inserción de multimedia, control de versiones y contenido multilingüe. El contenido generalmente se almacena en archivos Markdown y puede sincronizarse con repositorios Git remotos para control de versiones y colaboración. Wiki.js ofrece personalización modular, configuraciones de permisos detalladas y un potente motor de búsqueda incorporado para una fácil recuperación de información."
+    },
+    "fr": {
+      "slogan": "Wiki.js est un logiciel de wiki moderne construit sur Node.js, conçu pour une gestion efficace des connaissances et de la documentation",
+      "description": "Wiki.js propose une interface conviviale pour créer et éditer des pages en utilisant Markdown ou un éditeur visuel (WYSIWYG), et prend en charge l'intégration de médias, le suivi des versions et le contenu multilingue. Le contenu est généralement stocké dans des fichiers Markdown et peut être synchronisé avec des dépôts Git distants pour le contrôle des versions et la collaboration. Wiki.js offre une personnalisation modulaire, des paramètres de permissions précis et un moteur de recherche intégré performant pour une récupération facile de l'information."
+    },
+    "it": {
+      "slogan": "Wiki.js è un software wiki moderno costruito su Node.js, progettato per una gestione efficiente della conoscenza e della documentazione",
+      "description": "Wiki.js presenta un'interfaccia intuitiva per creare e modificare pagine usando Markdown o un editor visuale (WYSIWYG) e supporta l'incorporamento di media, il tracciamento delle versioni e contenuti multilingue. Il contenuto è solitamente memorizzato in file Markdown e può essere sincronizzato con repository Git remoti per il controllo delle versioni e la collaborazione. Wiki.js offre personalizzazioni modulari, impostazioni di permessi dettagliate e un potente motore di ricerca integrato per un facile recupero delle informazioni."
+    },
+    "pl": {
+      "slogan": "Wiki.js to nowoczesne oprogramowanie wiki zbudowane na Node.js, zaprojektowane do efektywnego zarządzania wiedzą i dokumentacją",
+      "description": "Wiki.js oferuje przyjazny interfejs do tworzenia i edytowania stron za pomocą Markdown lub wizualnego edytora (WYSIWYG), oraz wspiera osadzanie mediów, śledzenie wersji i treści wielojęzyczne. Zawartość jest zwykle przechowywana w plikach Markdown i może być synchronizowana z zdalnymi repozytoriami Git w celu kontroli wersji i współpracy. Wiki.js oferuje modułową personalizację, precyzyjne ustawienia uprawnień oraz wydajną wbudowaną wyszukiwarkę ułatwiającą dostęp do informacji."
+    }
+  }
+  
