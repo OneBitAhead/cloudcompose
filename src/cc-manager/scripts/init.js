@@ -136,11 +136,12 @@ class Init {
 	stats timeout 10s
 
 defaults
-	# log	global
 	mode	http
-	option	httplog
 	option	dontlognull
-	# Prevent slow query attacks      
+	# No logging at all
+    # log	 global
+    # option httplog
+    # Prevent slow query attacks      
 	timeout connect 5s
 	timeout queue 5s
     timeout client  30s
@@ -159,7 +160,8 @@ resolvers docker
 
         const FRONTEND_TEMPLATE = 
 `frontend cloudcompose
-
+    no log
+    
 	bind *:80
 	# use SNI (searches for the correct certificate?!)
 	bind *:443 ssl crt /ssl alpn h2,http/1.1

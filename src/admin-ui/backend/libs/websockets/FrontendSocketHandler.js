@@ -22,7 +22,7 @@ class WSConnection{
         this.url = url;
       }      
       this.open = false;
-      this.debug = true;
+      this.debug = false;
 
       this.#wasDisconnected = false;
 

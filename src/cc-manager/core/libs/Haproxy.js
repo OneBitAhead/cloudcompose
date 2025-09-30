@@ -83,11 +83,15 @@ module.exports = class Integrations {
             log.error("Haproxy",e);
             return {error: "Not a valid .pem. See backend logs for more info."}
         }
-       
+
+        
         if(certInfo.expired === true || certInfo.domains.length === 0) {
             log.error("Haproxy", certInfo, "Certificate is invalid!");            
             return certInfo;
         }
+
+        log.info("Haproxy", `Add certificate: ${pemFileName} (expires: ${certInfo.expires})`);
+        
         
         // write to haproxy/ssl directory   
         await fsp.writeFile(this.#haproxySSLFolder+`/${pemFileName}`, payload.pem);            
@@ -102,7 +106,8 @@ module.exports = class Integrations {
 
         var pemFileName = payload.name;
         var fileExists = await this.#fileExists(this.#haproxySSLFolder+`/${pemFileName}`);
-        if(!fileExists){            
+        if(!fileExists){   
+            log.error("Haproxy", `No file: ${pemFileName}. No reload!`);      
             return  {msg: "No such file. No reload of haproxy"};
         }
         await fsp.unlink(this.#haproxySSLFolder+`/${pemFileName}`);
@@ -117,9 +122,15 @@ module.exports = class Integrations {
 
         try{
             var cmd = `docker exec cc-haproxy haproxy -f /etc/haproxy/conf.d -c && echo "pass" || echo "fail"`;
-            var result = await execAsync(cmd);
-            if(result.stdout.trim() === "pass") return true;
-            else return false;
+            var result = await execAsync(cmd);            
+
+            if(result.stdout.trim() === "pass") {
+                log.info("Haproxy", `Configuration is valid.`);     
+                return true;
+            } else {
+                log.error("Haproxy", result.stderr, `Configuration is not valid:`);     
+                return false;
+            }
 
         }catch(e){
             log.error("Haproxy", e);            
